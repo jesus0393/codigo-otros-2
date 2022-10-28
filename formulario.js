@@ -1,8 +1,8 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector(".formulario"); // se cambia el selector correcto
 
 formulario.onsubmit = function(e) {
 
-  e.prevent();
+  e.preventDefault();//Se agrega preventDefault
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
